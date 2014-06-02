@@ -24,13 +24,13 @@
 % Set some sane defaults for section numbering depth and TOC depth.  You can
 % reset these counters in your preamble.
 %
-\setcounter{secnumdepth}{2}
+\setcounter{secnumdepth}{3}
 
 % Change the title page to look a bit better, and fit in with the fncychap
 % ``Bjarne'' style a bit better.
 %
 \renewcommand{\maketitle}{
-  \rule{\textwidth}{1pt}
+%  \rule{\textwidth}{1pt}
   \ifsphinxpdfoutput
     \begingroup
     % These \defs are required to deal with multi-line authors; it
@@ -44,17 +44,19 @@
     }
     \endgroup
   \fi
-  \begin{flushright}
+  \begin{center}
     \sphinxlogo%
-    {\rm\Huge\py@HeaderFamily \@title} \par
-    {\em\large\py@HeaderFamily \py@release\releaseinfo} \par
-    \vspace{25pt}
-    {\Large\py@HeaderFamily
-      \begin{tabular}[t]{c}
-        \@author
-      \end{tabular}} \par
-    \vspace{25pt}
-    \@date \par
+    {\Large \@title} \par
+%    {\em\large\py@HeaderFamily \py@release\releaseinfo} \par
+%    \vspace{20pt}
+  \end{center}
+  \begin{flushright}
+    \@date \hspace{3zw} \@author \par
+%    {\large
+%      \begin{tabular}[t]{c}
+%        \@author
+%      \end{tabular}} \par
+%%    \vspace{2pt}
     \py@authoraddress \par
   \end{flushright}
   \@thanks
@@ -69,7 +71,7 @@
     \parskip = 0mm
     \py@OldTableofcontents
   \endgroup
-  \rule{\textwidth}{1pt}
+%  \rule{\textwidth}{1pt}
   \vspace{12pt}
 }  
 
