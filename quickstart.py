@@ -239,7 +239,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   ('%(master_str)s', '%(project_fn)s.tex', u'%(project_doc_texescaped_str)s',
-   u'%(author_texescaped_str)s', 'manual'),
+   u'%(author_texescaped_str)s', 'howto'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

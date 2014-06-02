@@ -162,7 +162,7 @@ class Config(object):
         latex_show_pagerefs = (False, None),
         # paper_size and font_size are still separate values
         # so that you can give them easily on the command line
-        latex_paper_size = ('letter', None),
+        latex_paper_size = ('a4', None),
         latex_font_size = ('10pt', None),
         latex_elements = ({}, None),
         latex_additional_files = ([], None),

@@ -177,7 +177,7 @@ class LaTeXTranslator(nodes.NodeVisitor):
         # sort out some elements
         papersize = builder.config.latex_paper_size + 'paper'
         if papersize == 'paper': # e.g. command line "-D latex_paper_size="
-            papersize = 'letterpaper'
+            papersize = 'a4paper'
 
         self.elements = self.default_elements.copy()
         self.elements.update({
@@ -195,7 +195,7 @@ class LaTeXTranslator(nodes.NodeVisitor):
         if document.settings.docclass == 'howto':
             docclass = builder.config.latex_docclass.get('howto', 'jsarticle')
         else:
-            docclass = builder.config.latex_docclass.get('manual', 'report')
+            docclass = builder.config.latex_docclass.get('manual', 'jsbook')
         self.elements['docclass'] = docclass
         if builder.config.today:
             self.elements['date'] = builder.config.today
