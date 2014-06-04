@@ -51,7 +51,7 @@ msgstr "Python Enhancement Proposals; PEP %s"
 #: sphinx/writers/manpage.py:67 sphinx/writers/texinfo.py:217
 #, python-format
 msgid "%B %d, %Y"
-msgstr "%Y 年 %m 月 %d 日"
+msgstr "%Y年%m月%d日"
 
 #: sphinx/builders/changes.py:73
 msgid "Builtins"
