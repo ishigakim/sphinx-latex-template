@@ -27,8 +27,8 @@
 % Set some sane defaults for section numbering depth and TOC depth.  You can
 % reset these counters in your preamble.
 %
-\setcounter{secnumdepth}{2}
-\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
 
 % Change the title page to look a bit better, and fit in with the fncychap
 % ``Bjarne'' style a bit better.
